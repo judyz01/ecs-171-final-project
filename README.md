@@ -33,9 +33,10 @@ academics scale:1-5, social scale:1-5, and quality-of-life scale:1-5
 
 ## First Model Evaluation
 
-Our first model is a LogisticRegression model. Value >= 0.5 means it belong to class 1 (good),
-value < 0.5 means it belong to class 0 (bad).
-We see no sign of overfitting. Testing MSE are very close to the training MSE.
-In fact, for our second class (social), testing MSE is lower than the training MSE.
-However, since the MSE are higher than our expected error, perhaps this is a sign of underfitting.
+Our first model is a LogisticRegression model. Value >= 0.5 means it belong to class 1 (good), value < 0.5 means it belong to class 0 (bad).
+
+We see no sign of overfitting. For academics class, the training MSE is 0.190 and the testing MSE is 0.219. For quality-of-life class, the training MSE is 0.298 vs testing MSE 0.301.
+Testing MSE are higher than training MSE, but the errors are very small.
+For our second class (social), testing MSE (0.233) is lower than the training MSE (0.304).
+However, since the both training and testing MSE are higher than our expected error, perhaps this is a sign of underfitting.
 Overall, we can conclude that our models are between underfitting range and ideal range range.
