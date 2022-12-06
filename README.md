@@ -98,17 +98,17 @@ Our second model is an ANN model. For academics class, the training MSE is 0.160
 
 In order to visualize the MSE for the respective classes (academics, social, and quality of life), the figures (Figures 5, 6, and 7) below are provided with the training and testing MSEs recorded at Epoch 80, with the following statistics:
 
-Academics
-Training MSE: 0.16071428571428573
-Testing MSE: 0.1917808219178082
+Academics  
+Training MSE: 0.16071428571428573  
+Testing MSE: 0.1917808219178082  
 
-Social
-Training MSE: 0.17857142857142858
-Testing MSE: 0.1917808219178082
+Social  
+Training MSE: 0.17857142857142858  
+Testing MSE: 0.1917808219178082  
 
-Quality of Life
-Training MSE: 0.125
-Testing MSE: 0.3013698630136986
+Quality of Life  
+Training MSE: 0.125  
+Testing MSE: 0.3013698630136986  
 
 <p align="center">
   <img src="Figures/Results Fig2.png"/>
