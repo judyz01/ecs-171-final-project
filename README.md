@@ -81,7 +81,7 @@ Training our second model. We added dense layers with 8 units relu activation, 6
 #### Logistic Regression Model  
 Our first model is a LogisticRegression model. Value >= 0.5 means it belongs to class 1 (good), and value < 0.5 means it belongs to class 0 (bad). We see no sign of overfitting. For the academics class, the training MSE is 0.190 and the testing MSE is 0.219 (Figure 4). As for the quality-of-life class, the training MSE is 0.298 vs the testing MSE is 0.301. As we can see from the MSEs above, the testing MSEs are slightly higher than training MSE, as the errors are very small. For our second class (social), the testing MSE (0.233) is lower than the training MSE (0.304). However, since both training and testing MSE are higher than our expected error, this may be a sign of underfitting. Overall, we can conclude that our models are between the underfitting range and the ideal range. Figure 4 below gives a visualization of the training and testing MSEs for each respective class.
 
-![Results Fig1](/ECS171%20Project%20Pictures/Results%20fig1.png)  
+![Results Fig1](/ECS171%20Project%20Pictures/Results%20Fig1.png)  
 Fig. 4: MSEs of Logistic Regression Model
 
 #### ANN Model  
@@ -101,13 +101,13 @@ Quality of Life
 Training MSE: 0.125
 Testing MSE: 0.3013698630136986
 
-![Results Fig2](/ECS171%20Project%20Pictures/Results%20fig2.png)  
+![Results Fig2](/ECS171%20Project%20Pictures/Results%20Fig2.png)  
 Fig. 5: Academics MSEs over Epoch 
 
-![Results Fig3](/ECS171%20Project%20Pictures/Results%20fig3.png)  
+![Results Fig3](/ECS171%20Project%20Pictures/Results%20Fig3.png)  
 Fig. 6: Social MSEs over Epoch 
 
-![Results Fig4](/ECS171%20Project%20Pictures/Results%20fig4.png) 
+![Results Fig4](/ECS171%20Project%20Pictures/Results%20Fig4.png) 
 Fig. 7: Quality of Life MSEs over Epoch  
 
 ## Discussion
