@@ -54,6 +54,18 @@ By utilizing the University Dataset and the ANN model we have created, it is pos
 a. Data Exploration
 There are 241 observations. Male:female, student:faculty, percent-financial-aid, and percent-enrolled are all normally distributed. The distribution for sat verbal (Figure 1) and sat math (Figure 2) are bimodal. We have two peaks (0 and 500/600). We believe 0 means the school doesn't accept SAT scores, so it makes sense that they are bimodal. The distribution for percent-admittance is left-skewed (Figure 3). And the 3 classes we have are all multimodal distributed.
 
+![Methods Fig1](https://github.com/judyz01/ecs-171-final-project/blob/bb19c587025c7de39bf7d0283d412883d6bbb654/ECS171%20Project%20Pictures/Methods%20Fig1.png)
+
+Fig. 1: Bimodal SAT Verbal Score
+
+![Methods Fig2](https://github.com/judyz01/ecs-171-final-project/blob/bb19c587025c7de39bf7d0283d412883d6bbb654/ECS171%20Project%20Pictures/Methods%20Fig2.png)
+
+Fig. 2: Bimodal SAT Math Score
+
+![Methods Fig3](https://github.com/judyz01/ecs-171-final-project/blob/bb19c587025c7de39bf7d0283d412883d6bbb654/ECS171%20Project%20Pictures/Methods%20Fig3.png)
+
+Fig. 3: Left Skewed % Admittance
+
 The scale for male:female is 0 to 1, 0 means all students are female and 1 means all students are male. The scale for student:faculty is also 0 to 1. The scales for the two SAT scores are 0 to 800. The scales for the 3 percentages we have are all 0 to 100. The values for our classes are 0 to 5 (5 means the best).
 
 We updated the male:female feature from ratio to percentage. The new definition for male:female feature is how many % of students in this school are males. The new definition for student:faculty feature is how many % of people in this school are students.
@@ -73,6 +85,10 @@ Training our second model. We added dense layers with 8 units relu activation, 6
 a. Logistic Regression Model
 Our first model is a LogisticRegression model. Value >= 0.5 means it belongs to class 1 (good), and value < 0.5 means it belongs to class 0 (bad). We see no sign of overfitting. For the academics class, the training MSE is 0.190 and the testing MSE is 0.219 (Figure 4). As for the quality-of-life class, the training MSE is 0.298 vs the testing MSE is 0.301. As we can see from the MSEs above, the testing MSEs are slightly higher than training MSE, as the errors are very small. For our second class (social), the testing MSE (0.233) is lower than the training MSE (0.304). However, since both training and testing MSE are higher than our expected error, this may be a sign of underfitting. Overall, we can conclude that our models are between the underfitting range and the ideal range. Figure 4 below gives a visualization of the training and testing MSEs for each respective class.
 
+![Results Fig1](https://github.com/judyz01/ecs-171-final-project/blob/bb19c587025c7de39bf7d0283d412883d6bbb654/ECS171%20Project%20Pictures/Results%20fig1.png)
+
+Fig. 4: MSEs of Logistic Regression Model
+
 b. ANN Model
 Our second model is an ANN model. For academics class, the training MSE is 0.160 and the testing MSE is 0.191. For the social class, the training MSE is 0.178 vs the testing MSE is 0.191. For the quality-of-life class, the training MSE is 0.125 vs the testing MSE is 0.301.
 
@@ -90,6 +106,18 @@ Quality of Life
 Training MSE: 0.125
 Testing MSE: 0.3013698630136986
 
+![Results Fig2](https://github.com/judyz01/ecs-171-final-project/blob/bb19c587025c7de39bf7d0283d412883d6bbb654/ECS171%20Project%20Pictures/Results%20fig2.png)
+
+Fig. 5: Academics MSEs over Epoch
+
+![Results Fig3](https://github.com/judyz01/ecs-171-final-project/blob/bb19c587025c7de39bf7d0283d412883d6bbb654/ECS171%20Project%20Pictures/Results%20fig3.png)
+
+Fig. 6: Social MSEs over Epoch
+
+![Results Fig4](https://github.com/judyz01/ecs-171-final-project/blob/bb19c587025c7de39bf7d0283d412883d6bbb654/ECS171%20Project%20Pictures/Results%20fig4.png)
+
+Fig. 7: Quality of Life MSEs over Epoch
+
 ## D. Discussion
 With all of us being students of UC Davis, we thought it would be a good idea to see if there is a correlation between the schools’ academic/social atmosphere and the schools’ statistics. We chose the University data set and used features such as the number of students, male:female ratio, student:faculty ratio, and many other features to predict academics, social, and quality of life on a scale from 1-5. We chose to target those 3 categories since the quality of the students' life and experiences was what we wanted to understand and interpret. We dropped unnecessary data points such as name and state since those are not as important from an academic and social perspective. After looking through the data, we saw that there was a slight skew in the data results. To fix this, we decided to oversample our data to make it more even. This resulted in a slightly better result in the final version of the models. 
 
@@ -105,7 +133,7 @@ With the University Data Set, we were able to assess the performance of each of 
 ## F. Collaboration Section
 Name: Rashed Alrayssi
 	Title: Writer
-Contribution: Worked on the discussion section of the written part of the assignment. Discussed some parts of choosing possible models for model 1. Helped with some coordination on Discord and editing the final write up. 
+Contribution: Worked on the discussion section of the written part of the assignment. Discussed some parts of choosing possible models for model 1. Helped with some coordination on Discord, editing the final write up, and with compiling the final readme. 
 
 Name: Kevin Guan
 	Title: Programmer
