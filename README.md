@@ -54,17 +54,17 @@ By utilizing the University Dataset and the ANN model we have created, it is pos
 There are 241 observations. Male:female, student:faculty, percent-financial-aid, and percent-enrolled are all normally distributed. The distribution for sat verbal (Figure 1) and sat math (Figure 2) are bimodal. We have two peaks (0 and 500/600). We believe 0 means the school doesn't accept SAT scores, so it makes sense that they are bimodal. The distribution for percent-admittance is left-skewed (Figure 3). And the 3 classes we have are all multimodal distributed.
 
 <p align="center">
-  <img src="/ECS171%20Project%20Pictures/Methods%20Fig1.png"/>
+  <img src="Figures/Methods Fig1.png"/>
   <br>Fig. 1: Bimodal SAT Verbal Score 
 </p>
 
 <p align="center">
-  <img src="/ECS171%20Project%20Pictures/Methods%20Fig2.png"/>
+  <img src="Figures/Methods Fig2.png"/>
   <br>Fig. 2: Bimodal SAT Math Score  
 </p>
 
 <p align="center">
-  <img src="/ECS171%20Project%20Pictures/Methods%20Fig3.png"/>
+  <img src="Figures/Methods Fig3.png"/>
   <br>Fig. 3: Left Skewed % Admittance 
 </p>
 
@@ -89,7 +89,7 @@ Training our second model. We added dense layers with 8 units relu activation, 6
 Our first model is a LogisticRegression model. Value >= 0.5 means it belongs to class 1 (good), and value < 0.5 means it belongs to class 0 (bad). We see no sign of overfitting. For the academics class, the training MSE is 0.190 and the testing MSE is 0.219 (Figure 4). As for the quality-of-life class, the training MSE is 0.298 vs the testing MSE is 0.301. As we can see from the MSEs above, the testing MSEs are slightly higher than training MSE, as the errors are very small. For our second class (social), the testing MSE (0.233) is lower than the training MSE (0.304). However, since both training and testing MSE are higher than our expected error, this may be a sign of underfitting. Overall, we can conclude that our models are between the underfitting range and the ideal range. Figure 4 below gives a visualization of the training and testing MSEs for each respective class.
 
 <p align="center">
-  <img src="ECS171 Project Pictures/Results fig1.png"/>
+  <img src="Figures/Results Fig1.png"/>
   <br>Fig. 4: MSEs of Logistic Regression Model
 </p>
 
@@ -111,17 +111,17 @@ Training MSE: 0.125
 Testing MSE: 0.3013698630136986
 
 <p align="center">
-  <img src="ECS171 Project Pictures/Results fig2.png"/>
+  <img src="Figures/Results Fig2.png"/>
   <br>Fig. 5: Academics MSEs over Epoch 
 </p>
 
 <p align="center">
-  <img src="ECS171 Project Pictures/Results fig3.png"/>
+  <img src="Figures/Results Fig3.png"/>
   <br>Fig. 6: Social MSEs over Epoch 
 </p>
 
 <p align="center">
-  <img src="ECS171 Project Pictures/Results fig4.png"/>
+  <img src="Figures/Results Fig4.png"/>
   <br>Fig. 7: Quality of Life MSEs over Epoch 
 </p>
 
