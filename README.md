@@ -41,7 +41,6 @@ For our second class (social), testing MSE (0.233) is lower than the training MS
 However, since the both training and testing MSE are higher than our expected error, perhaps this is a sign of underfitting.
 Overall, we can conclude that our models are between underfitting range and ideal range range.
 
-==================
 
 ## A. Introduction 
 There are more than 4,000 higher-education institutions within the United States. Due to the sheer number of institutions and unique students, it becomes difficult to individually assess each universities’ performance manually. 
